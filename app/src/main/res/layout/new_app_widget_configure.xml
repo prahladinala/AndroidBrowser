@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        android:textColor="#000"
+        android:text="@string/configure" />
+
+    <EditText
+        android:id="@+id/appwidget_text"
+        android:hint="prahlad inala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:minLines="1"
+        android:maxLines="10"
+        android:scrollbars="vertical"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        android:textColor="#000"
+        android:text="@string/configure1" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:background="@drawable/backbone"
+        android:text="@string/add_widget" />
+
+</LinearLayout>

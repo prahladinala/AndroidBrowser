@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PR Browser</string>
+
+    <string name="share">Share</string>
+    <string name="appwidget_text">PRahlad Inala</string>
+    <string name="configure">printf (</string>
+    <string name="configure1">)</string>
+    <string name="add_widget">Print</string>
+</resources>

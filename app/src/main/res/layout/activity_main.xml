@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:weightSum="1"
+        android:layout_weight="0.0"
+        android:id="@+id/ll_urlgo"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_background">
+
+        <Button
+            android:id="@+id/btn_bck1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.0"
+            android:text=""
+            android:drawableLeft="@drawable/back"
+            android:background="@drawable/btn_background"/>
+
+        <EditText
+            android:id="@+id/et_url"
+            android:layout_weight="0.99"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_contact"
+            android:hint="Type your URL here"
+            android:drawableStart="@drawable/search"
+            android:drawableLeft="@drawable/search" />
+
+        <Button
+            android:id="@+id/btn_go"
+            android:layout_weight="0.01"
+            android:background="@drawable/btn_background"
+            android:text="GO"
+            android:drawableRight="@drawable/go"
+            android:textColor="#FFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <WebView
+        android:id="@+id/wv_brow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.90" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="50"
+        android:progressDrawable="@drawable/progress_drawable" />
+
+    <LinearLayout
+        android:weightSum="1"
+        android:layout_weight="0.1"
+        android:id="@+id/ll_btns"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btn_bck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.125"
+            android:background="@drawable/btn_background"
+            android:drawableLeft="@drawable/back"
+            android:text=""
+            android:textColor="#FFF" />
+
+        <Button
+            android:layout_weight="0.125"
+            android:id="@+id/btn_fwd"
+            android:text=""
+            android:textColor="#FFF"
+            android:background="@drawable/btn_background"
+            android:drawableLeft="@drawable/forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:layout_weight="0.125"
+            android:id="@+id/btn_reload"
+            android:text=""
+            android:textColor="#FFF"
+            android:background="@drawable/btn_background"
+            android:drawableLeft="@drawable/refresh"
+            android:drawablePadding="4dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_weight="0.125"
+            android:id="@+id/btn_clear"
+            android:text=""
+            android:textColor="#FFF"
+            android:background="@drawable/btn_background"
+            android:drawableLeft="@drawable/clear"
+            android:drawablePadding="2dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_weight="0.125"
+            android:id="@+id/btn_love"
+            android:text=""
+            android:textColor="#FFF"
+            android:background="@drawable/btn_background"
+            android:drawableLeft="@drawable/man"
+            android:drawablePadding="2dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_weight="0.125"
+            android:id="@+id/btn_home"
+            android:text=""
+            android:textColor="#FFF"
+            android:background="@drawable/btn_background"
+            android:drawableLeft="@drawable/home"
+            android:drawablePadding="2dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_weight="0.125"
+            android:id="@+id/btn_share"
+            android:text=""
+            android:textColor="#FFF"
+            android:background="@drawable/btn_background"
+            android:drawableLeft="@drawable/share"
+            android:drawablePadding="2dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.125"
+            android:background="@drawable/btn_background"
+            android:drawableLeft="@drawable/update"
+            android:drawablePadding="2dip"
+            android:text=""
+            android:textColor="#FFF" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
